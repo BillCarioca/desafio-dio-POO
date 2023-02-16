@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86d93b85-25e1-4fbb-8092-803c1b977ab2" name="Changes" comment="Create class Curso e Mentoria">
-      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Bootcamp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Conteudo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" afterDir="false" />
+    <list default="true" id="86d93b85-25e1-4fbb-8092-803c1b977ab2" name="Changes" comment="Create class Bootcamp, Conteudo end Dev">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Curso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Mentoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Mentoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676556090876</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create class Bootcamp, Conteudo end Dev">
+      <created>1676558251460</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676558251460</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Add README" />
     <MESSAGE value="Create class Curso e Mentoria" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create class Curso e Mentoria" />
+    <MESSAGE value="Create class Bootcamp, Conteudo end Dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create class Bootcamp, Conteudo end Dev" />
   </component>
 </project>
