@@ -26,31 +26,28 @@ public class Dev {
     public double calcularTotalXp(){
         return this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXp).sum();
     }
-
-    public String getNome() {
-        return nome;
+    public void relatorioDev(){
+        System.out.println("Dev { "+nome);
+        System.out.println("Conteúdo inscritos:");
+        if(conteudosInscritos.isEmpty()) System.out.println("Dev sem matricula em conteúdo!");
+        else conteudosInscritos.stream().forEach(System.out::println);
+        System.out.println("Conteúdo concluido:");
+        if(conteudosConcluidos.isEmpty()) System.out.println("Dev não concluiu conteúdo!");
+        else conteudosConcluidos.stream().forEach(System.out::println);
+        System.out.println("XP "+calcularTotalXp()+" }");
     }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public Set<Conteudo> getConteudosInscritos() {
-        return conteudosInscritos;
-    }
-
+    public Dev() { }
+    public Dev(String nome) {this.nome = nome;}
+    public String getNome() { return nome; }
+    public void setNome(String nome) {this.nome = nome; }
+    public Set<Conteudo> getConteudosInscritos() { return conteudosInscritos; }
     public void setConteudosInscritos(Set<Conteudo> conteudosInscritos) {
         this.conteudosInscritos = conteudosInscritos;
     }
-
-    public Set<Conteudo> getConteudosConcluidos() {
-        return conteudosConcluidos;
-    }
-
+    public Set<Conteudo> getConteudosConcluidos() { return conteudosConcluidos; }
     public void setConteudosConcluidos(Set<Conteudo> conteudosConcluidos) {
         this.conteudosConcluidos = conteudosConcluidos;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -58,12 +55,10 @@ public class Dev {
         Dev dev = (Dev) o;
         return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
-
     @Override
     public String toString() {
         return "Dev{" +
